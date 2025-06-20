@@ -38,26 +38,34 @@ Highlights from the Harvard Extension School guide, emphasizing content clarity,
 - A Markdown editor like Typora or a code editor (VS Code, Atom, etc.)
 - (Optional) [Pandoc](https://pandoc.org/) for converting to PDF, DOCX, or LaTeX.
 
-### 📌 Usage Instructions
+---
 
-1. **Clone this repository:**
-   ```bash
-   git clone https://github.com/fedei10/cover-letter-template.git
-   cd cover-letter-template
-   ```
-2. **Choose a template:**
-   - Open `cover-letter-template.md` or a localized version in your editor.
+### 📌 Quick Start (Recommended)
 
-3. **Customize:**
-   - Replace placeholder text (name, role, company, etc.).
-   - Adapt the body to highlight your most relevant experience and align with the job description.
+**The easiest way to use this template:**
 
-4. **Export or print:**
-   - Save directly as a PDF via your editor, or print.
-   - Alternatively, use Pandoc for professional PDF export:
-     ```bash
-     pandoc cover-letter-template.md -o cover-letter.pdf
-     ```
+1. **Download or clone this repository.**
+2. **Import the project directly into [Overleaf](https://www.overleaf.com/):**
+   - Go to Overleaf and select "New Project" > "Upload Project".
+   - Upload the folder or a zipped copy of this repository.
+   - Overleaf will instantly allow you to edit, compile, and export your cover letter as PDF, no installation or setup required.
+
+---
+
+### 🛠️ Advanced: Local LaTeX Editing with VS Code
+
+If you prefer to work locally on your computer:
+
+1. **Install [VS Code](https://code.visualstudio.com/).**
+2. Install the **LaTeX Workshop** extension from the Extensions Marketplace.
+3. Install a LaTeX distribution:
+    - **Windows:** [MiKTeX](https://miktex.org/download) or [TeX Live](https://www.tug.org/texlive/)
+    - **Mac:** [MacTeX](https://tug.org/mactex/)
+    - **Linux:** [TeX Live](https://www.tug.org/texlive/)
+4. Open the project folder in VS Code.
+5. Edit your `.tex` file and press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd> to compile and preview your PDF.
+
+> **Tip:** If any LaTeX package is missing, your LaTeX distribution will prompt you to install it automatically.
 
 ---
 
