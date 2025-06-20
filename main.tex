@@ -1,4 +1,3 @@
-
 % Document class: moderncv with 11pt font, A4 paper, and roman font style
 \documentclass[11pt,a4paper,roman]{moderncv}
 
@@ -28,17 +27,25 @@
 % Begin the document
 \begin{document}
 
-% Personalization: Address to a specific person if possible
-% Example: \recipient{Ms. Jane Doe}{Company Name}
-\recipient{[Hiring Manager's Name]}{[Company Name]}
-% Date (automatically set to today)
+% Date of the letter (automatically set to today)
 \date{\today}
-% Opening salutation (personalize if possible)
-\opening{Dear [Hiring Manager's Name],}
+
+% Recipient information - complete contact details
+\recipient{Contact Name}{%
+Contact Title\\
+Company Name\\
+Street Address\\
+City, State, Zip Code}
+
+% Opening salutation (personalize with recipient's name)
+\opening{Dear [Recipient's Name]:}
+
 % Closing phrase
 \closing{Sincerely,}
-% Enclosure (e.g., CV attached)
-\enclosure[Attachment]{CV}
+
+% Enclosure (e.g., CV, portfolio, references)
+\enclosure[Attachments]{Résumé, References}
+
 % Generate the letter title (header)
 \makelettertitle
 
@@ -64,7 +71,7 @@ Let me know if you'd like details on how I improved [a company’s retention by 
 % Add vertical space before closing
 \vspace{0.5cm}
 
-% Generate the letter closing (footer)
+% Generate the letter closing (footer with signature space)
 \makeletterclosing
 
 % End the document
