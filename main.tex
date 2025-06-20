@@ -1,22 +1,71 @@
-\documentclass[11pt]{letter}
-\usepackage[a4paper,margin=1in]{geometry}
-\usepackage{helvet}
-\renewcommand{\familydefault}{\sfdefault}
-\usepackage{hyperref}
+
+% Document class: moderncv with 11pt font, A4 paper, and roman font style
+\documentclass[11pt,a4paper,roman]{moderncv}
+
+% Language and encoding
+\usepackage[french,english]{babel} % Add English for broader compatibility
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Font: Noto Serif (from texlive-fonts-extra)
+\usepackage[sfdefault,light]{roboto}
+\usepackage{noto}
+\renewcommand*{\familydefault}{\rmdefault}
+
+% ModernCV style and color
+\moderncvstyle{classic}
+\moderncvcolor{green}
+
+% Page geometry
+\usepackage[scale=0.75]{geometry}
+
+% Hyperlinks (for email, etc.)
+% moderncv already loads hyperref, so do not load it again to avoid option clash
+
+% Personal data (in a separate section)
+\input{sections/RightHeader.tex}
+
+% Begin the document
 \begin{document}
 
-\begin{center}
-\textbf{\LARGE{Lettre de motivation}}
-\end{center}
+% Personalization: Address to a specific person if possible
+% Example: \recipient{Ms. Jane Doe}{Company Name}
+\recipient{[Hiring Manager's Name]}{[Company Name]}
+% Date (automatically set to today)
+\date{\today}
+% Opening salutation (personalize if possible)
+\opening{Dear [Hiring Manager's Name],}
+% Closing phrase
+\closing{Sincerely,}
+% Enclosure (e.g., CV attached)
+\enclosure[Attachment]{CV}
+% Generate the letter title (header)
+\makelettertitle
 
+% --- Body of the cover letter ---
+% Keep each paragraph concise and focused. See comments for guidance.
+% Proofread carefully! Use tools like Grammarly or read aloud to catch errors.
 
+% Intro Paragraph: Start with a relevant insight, result, or tailored hook. State the position and your interest. Focus on what you can offer the employer.
+% Personalize this section for the job and company. Avoid generic statements.
+I am excited to apply for the [Job Title] position at [Company Name]. With a proven record in [relevant field/skill], I was drawn to your team's recent [project/achievement/initiative] and believe my experience aligns well with your goals.
 
+% Body Paragraph: Tell a short, specific achievement story. Avoid repeating your resume. Show, don't just tell, your value. (Storytelling over repetition)
+% Replace the example below with your own story. Focus on results and how you contributed.
+When I joined [Previous Company], our [project/campaign/process] improved from [starting point] to [measurable result, e.g., generating 48K/month in leads] with minimal resources. This success was driven by [key skills/approach], which I am eager to bring to your team.
+% Skills & Enthusiasm: Highlight transferable skills and genuine enthusiasm. Link your experience to the employer's needs. Keep it employer-centric.
+% Show how your background and passion fit the company's mission and needs.
+My background in [skill/area] and my passion for [industry/mission] equip me to contribute to [Company]'s continued success. I am particularly enthusiastic about [specific aspect of the company or role].
 
+% Closing Paragraph: Reaffirm interest and include a specific call to action. Keep it brief and professional.
+% Suggest a next step or offer to provide more details. Thank the employer.
+Let me know if you'd like details on how I improved [a company’s retention by 32%] or discuss how I can help [Company] achieve its goals. Thank you for your consideration.
 
+% Add vertical space before closing
+\vspace{0.5cm}
 
+% Generate the letter closing (footer)
+\makeletterclosing
 
-
-
-
-
+% End the document
 \end{document}
