@@ -1,78 +1,66 @@
-% Document class: moderncv with 11pt font, A4 paper, and roman font style
+% Document class: moderncv avec police 11pt, format A4, et style roman
 \documentclass[11pt,a4paper,roman]{moderncv}
 
-% Language and encoding
-\usepackage[french,english]{babel} % Add English for broader compatibility
+% Langue et encodage
+\usepackage[french]{babel} % Utilisation du français comme langue principale
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
-% Font: Noto Serif (from texlive-fonts-extra)
-\usepackage[sfdefault,light]{roboto}
+% Police: Noto Serif (du package texlive-fonts-extra)
 \usepackage{noto}
 \renewcommand*{\familydefault}{\rmdefault}
 
-% ModernCV style and color
+% Style et couleur ModernCV
 \moderncvstyle{classic}
 \moderncvcolor{green}
 
-% Page geometry
+% Géométrie de la page
 \usepackage[scale=0.75]{geometry}
 
-% Hyperlinks (for email, etc.)
-% moderncv already loads hyperref, so do not load it again to avoid option clash
+% Hyperliens (pour email, etc.)
+% moderncv charge déjà hyperref, donc ne pas le charger à nouveau pour éviter les conflits d'options
 
-% Personal data (in a separate section)
+% Données personnelles (dans une section séparée)
 \input{sections/RightHeader.tex}
 
-% Begin the document
+% Début du document
 \begin{document}
 
-% Date of the letter (automatically set to today)
+% Date de la lettre (automatiquement définie à aujourd'hui)
 \date{\today}
 
-% Recipient information - complete contact details
-\recipient{Contact Name}{%
-Contact Title\\
-Company Name\\
-Street Address\\
-City, State, Zip Code}
+% Informations du destinataire - coordonnées complètes
+\recipient{Nom du Contact}{%
+Titre du Contact\\
+Nom de l'Entreprise\\
+Adresse\\
+Code Postal, Ville}
 
-% Opening salutation (personalize with recipient's name)
-\opening{Dear [Recipient's Name]:}
+% Formule d'appel (personnaliser avec le nom du destinataire)
+\opening{Madame, Monsieur,}
 
-% Closing phrase
-\closing{Sincerely,}
+% Formule de politesse
+\closing{Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.}
 
-% Enclosure (e.g., CV, portfolio, references)
-\enclosure[Attachments]{Résumé, References}
+% Pièces jointes (par exemple, CV, portfolio, références)
+\enclosure[Pièces jointes]{CV, Références}
 
-% Generate the letter title (header)
+% Génère l'en-tête de la lettre
 \makelettertitle
 
-% --- Body of the cover letter ---
-% Keep each paragraph concise and focused. See comments for guidance.
-% Proofread carefully! Use tools like Grammarly or read aloud to catch errors.
 
-% Intro Paragraph: Start with a relevant insight, result, or tailored hook. State the position and your interest. Focus on what you can offer the employer.
-% Personalize this section for the job and company. Avoid generic statements.
-I am excited to apply for the [Job Title] position at [Company Name]. With a proven record in [relevant field/skill], I was drawn to your team's recent [project/achievement/initiative] and believe my experience aligns well with your goals.
+\input{sections/OpeningParagraph.tex} % Paragraphe d'introduction pour la lettre de motivation
+% Contenu principal de la lettre de motivation - structuré selon les meilleures pratiques
+\input{sections/MiddleParagraph.tex} % Paragraphe(s) central(aux) reliant votre parcours au poste
+% Paragraphe supplémentaire facultatif pour plus d'expérience/formation
+\input{sections/ClosingParagraph.tex} % Paragraphe de conclusion réitérant l'intérêt et remerciant le lecteur
 
-% Body Paragraph: Tell a short, specific achievement story. Avoid repeating your resume. Show, don't just tell, your value. (Storytelling over repetition)
-% Replace the example below with your own story. Focus on results and how you contributed.
-When I joined [Previous Company], our [project/campaign/process] improved from [starting point] to [measurable result, e.g., generating 48K/month in leads] with minimal resources. This success was driven by [key skills/approach], which I am eager to bring to your team.
-% Skills & Enthusiasm: Highlight transferable skills and genuine enthusiasm. Link your experience to the employer's needs. Keep it employer-centric.
-% Show how your background and passion fit the company's mission and needs.
-My background in [skill/area] and my passion for [industry/mission] equip me to contribute to [Company]'s continued success. I am particularly enthusiastic about [specific aspect of the company or role].
 
-% Closing Paragraph: Reaffirm interest and include a specific call to action. Keep it brief and professional.
-% Suggest a next step or offer to provide more details. Thank the employer.
-Let me know if you'd like details on how I improved [a company’s retention by 32%] or discuss how I can help [Company] achieve its goals. Thank you for your consideration.
-
-% Add vertical space before closing
+% Ajoute un espace vertical avant la conclusion
 \vspace{0.5cm}
 
-% Generate the letter closing (footer with signature space)
+% Génère la conclusion de la lettre (pied de page avec espace pour signature)
 \makeletterclosing
 
-% End the document
+% Fin du document
 \end{document}
