@@ -5,7 +5,7 @@ A customizable and professional cover letter template to help users quickly crea
 > **Note:** This project is based on the notes and recommendations found in the [Harvard Extension School 2024 Resume and Letter Guide (PDF)](https://cdn-careerservices.fas.harvard.edu/wp-content/uploads/sites/161/2024/10/2024-HES_resume-and-letter.pdf).
 
 
-[![Preview of main.pdf](main-preview.png)](main.pdf)
+[![Preview of main.pdf](cover.png)](main.pdf)
 ## Features
 
 - **Modern, clean design:** Impress recruiters with a professional layout.
